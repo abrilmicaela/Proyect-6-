@@ -1,26 +1,12 @@
 
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Registrarse</span>
-    </a>
 
-  
-    <ul class="nav nav-pills">
-        <div class="icono">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"class="bi bi-house" viewBox="0 0 16 16">
-                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-              </svg>
-        </div>
-        
-      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Nuevo usuario</a></li>
-      
-    </ul>
-</header>
+
 
     <section class="contenedor">
+
+        <h3> Registrarse </h3>
+
+
         <form [formGroup]="reactiveForm" (ngSubmit)="cargardatos()">
             <div>
                 <label for="Nombre">Nombre</label>
@@ -38,14 +24,33 @@
                 <label for="Email">Email</label>
                 <input type="text" id="Email" formControlName="Email">
             </div>
+
+            <div>
+                <label for="Nameuser">Nombre usuario</label>
+                <input type="text-number" id="Nameuser" formControlName="Nameuser">
+            </div>
             <div>
                 <label for="Telefono">Telefono</label>
                 <input type="text" id="Telefono" formControlName="Telefono">
             </div>
-<button>
+            <div>
+                <label for="Password">Password</label>
+                <input type="text" id="Password"  value= "Password" placeholder="***********" formControlName="Password">
+            </div>
+
+
+<div>
+   
+   <label>
+    <button class="btn btn-primary rounded-pill px-3"   type="submit">enviar
+       
+    </button>
+
+   </label>
     
-    <input type=" submit" value="enviar">
-</button>
+
+</div>
+           
         
 
         </form>

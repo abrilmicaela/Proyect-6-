@@ -1,0 +1,29 @@
+
+h3{
+    display:flex;
+    color: rgb(25, 96, 153);
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+
+
+.contenedor{
+   
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+label,input{
+    width: 95%;
+    margin: 5px 0px;
+    padding: 15px;
+}
+
+button{
+    padding: 5px;
+}
+

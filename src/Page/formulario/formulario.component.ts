@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-formulario',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,RouterLink,RouterLinkActive],
   templateUrl: './formulario.component.html',
   styleUrl: './formulario.component.css'
 })
@@ -18,7 +19,9 @@ export class FormularioComponent {
       Nombre: new FormControl('',[]),
       Apellidos: new FormControl ('',[]),
       Email: new FormControl ('',[]),
-      Telefono: new FormControl('',[])
+      Nameuser: new FormControl('',[]),
+      Telefono: new FormControl('',[]),
+      Password: new FormControl ('',[]),
     },[])
   }
 
